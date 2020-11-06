@@ -3,21 +3,26 @@
 
 
 
-## 
+##  基础配置
     "@tinymce/tinymce-angular": "^4.2.0",
     "tinymce": "^5.5.1",
-    
-    
-    
-              "node_modules/tinymce/tinymce.min.js",
-              "node_modules/tinymce/themes/modern/theme.min.js",
-              "node_modules/tinymce/plugins/link/plugin.min.js",
-              "node_modules/tinymce/plugins/paste/plugin.min.js",
-              "node_modules/tinymce/plugins/table/plugin.min.js"
-
+     app.module.ts
+     providers: [
+                       {provide: TINYMCE_SCRIPT_SRC, useValue: 'assets/tinymce/tinymce.min.js'},
+                     ],
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.7.
 
+
+
+## About
+
+This package is a thin wrapper around [TinyMCE](https://github.com/tinymce/tinymce) to make it easier to use in an Angular application.
+
+* If you need detailed documentation on TinyMCE, see: [TinyMCE Documentation](https://www.tiny.cloud/docs/).
+* For the TinyMCE Angular Quick Start, see: [TinyMCE Documentation - Angular Integration](https://www.tiny.cloud/docs/integrations/angular/#tinymceangularintegrationquickstartguide).
+* For the TinyMCE Angular Technical Reference, see: [TinyMCE Documentation - TinyMCE Angular Technical Reference](https://www.tiny.cloud/docs/integrations/angular/#tinymceangulartechnicalreference).
+* For our quick demos, check out the TinyMCE Angular [Storybook](https://tinymce.github.io/tinymce-angular/).
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

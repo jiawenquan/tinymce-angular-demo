@@ -18,7 +18,6 @@ import {ReactiveFormsModule} from '@angular/forms';
   ],
   providers: [
     {provide: TINYMCE_SCRIPT_SRC, useValue: 'assets/tinymce/tinymce.min.js'},
-    // {provide: TINYMCE_SCRIPT_SRC, useValue: 'assets/tinymce/themes/silver/theme.js'}
   ],
   bootstrap: [AppComponent]
 })
